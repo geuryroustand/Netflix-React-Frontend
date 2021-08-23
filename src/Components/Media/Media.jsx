@@ -6,7 +6,7 @@ const Media = () => {
 
   const getMovies = async () => {
     try {
-      const response = await fetch(`${process.env.REACT_APP_URL}/media`);
+      const response = await fetch(`${process.env.REACT_APP_BE_URL}/media`);
 
       const data = await response.json();
 
